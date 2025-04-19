@@ -50,7 +50,7 @@
   
   .imgsec {
     position: relative;
-    background-image: url('/images/photo-1501698335706-90b736210a61.avif');
+    background-image: url('images/photo-1501698335706-90b736210a61.avif');
     background-size: cover;
     background-position: center;
     height: 100vh;
