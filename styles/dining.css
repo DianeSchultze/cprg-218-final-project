@@ -46,20 +46,19 @@ section img {
 
 
 #endnote {
-    max-height: 100vh;
-    margin-top: 2rem;
-    padding: 0;
-    border: none;
+    max-height: 50vh;
+    background-color: #ffffff;  
+    margin-bottom: 2rem;
+    
   }
   
   .imgsec {
     position: relative;
-    background-image: url('/images/allen-dewberry-jr-XjKiG46fkQI-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    background-blend-mode: overlay;
-    background-color: #4e4e4e;
+    height: 50vh;
+    margin: 0;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,16 +68,18 @@ section img {
     display: flex;
     flex-direction: column; 
     background-color: white;
+    border: 1px solid #32323224;
     padding: 2rem;
     max-width: 90%;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
     justify-content: space-around;
     line-height: 1.5rem
   
   }
   .mini-title {
     margin-bottom: 1rem;
+    color: #323232;
   }
   #endnote ul {
     list-style: none;
