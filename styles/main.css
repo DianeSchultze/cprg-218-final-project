@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+
+body, .moments-item p	{
+  font-family: 'Inter', sans-serif;
+  color: #404040;
+}
+
+main {
+  padding: 0rem 3rem 3rem 3rem;
+
+}
+
+/* text */
+h1, h2, h3, h4, .tnr-italic {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 550;
+  color: #323232;
+}
+
+h1 {font-size: clamp(1.8rem, 5vw, 5rem);}
+h2 {font-size: clamp(1.5rem, 3vw, 3rem);}
+h3 {font-size: clamp(1.2rem, 2vw, 1.8rem);}
+h4 {font-size: clamp(1rem, 1.5vw, 1.4rem);}
+
+p,  blockquote {
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+small {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #323232;
+  padding: 2rem;
+text-transform: uppercase;
+}
+
+span.second {
+  color: #999;
+  font-weight: 400;
+}
+
+a {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-decoration: none;
+  color: #404040;
+}
+
+ 
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #32323224;
+  z-index: 1000;
+}
+
+nav a img {
+  height: 50px
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+}
+
+h2.hidden{
+  visibility:hidden;
+  padding: 0;
+}
+
+.navburger {
+  font-size: 1.7rem;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  color: #323232;
+  cursor: pointer;
+}
+
+.navburger:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navburger:hover {
+  background-color: #f7f7f7;
+}
+
+.navcontent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-top: 1px solid rgba(50, 50, 50, 0.084);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.navcontent.active {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.navcontent li a {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.084);
+}
+
+.navcontent li a:hover {
+  color: #000;
+  background-color: #f7f7f7;
+}
+
+/* weather */
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  padding: 2rem;
+}
+
+.weather-icon {
+  font-size: 1rem;
+  color: #323232;
+  margin-right: 0.5rem;
+}
+
+.weather-info {
+  display: flex;
+  text-transform: uppercase;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.dot {
+  color: #999;
+  font-weight: normal;
+  padding: 0 0.25rem;
+}
+
+.weather-info li:nth-child(n+2) {
+  display: none;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+/* 2 column flex w image */
+.sidecontent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+  
+.sideimage img {
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+#flxcontainer {
+  background: #323232;
+  display: flex;
+  padding: 3rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+footer div {
+  size: 100%;
+}
+
+footer img {
+  height: 80px;
+}
+footer li {
+  list-style: none;
+  line-height: 3rem;
+}
+footer li a {
+  color: #fff;
+  font-weight: 300;
+}
+
+footer li a:hover {
+  color: #787878;
+  font-weight: 300;
+}
+
+#quickie-box {
+  visibility: hidden;
+}
+
+#quickies li a {
+  font-family: "Inter";
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  
+}
+
+footer h4 {
+  color: #fff;
+}
+
+
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+
+.socialContainer {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 2s;
+}
+
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+
+.containerTwo:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+/* Email */
+.containerThree:hover {
+  background-color: #ea4335;
+  transition-duration: 0.3s;
+}
+
+/* Active press effect */
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+/* Icon styles */
+.socialicon {
+  font-size: 1.2rem;
+  color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover animation */
+.socialContainer:hover .socialicon {
+  animation: slide-in-top 0.3s both;
+}
+
+
+footer small {
+  color: #000000;
+  padding: 2rem;
+}
+
+
+
+/* Slide-in animation */
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media  (min-width: 480px) {
+  #quickie-box {
+  visibility:visible
+}
+
+/* queries */
+@media (min-width: 768px) {
+
+
+  header, main {
+	padding: 0 5rem;
+  }
+  .navburger {
+    display: none;
+  }
+
+  .navcontent {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    max-height: none;
+    list-style: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    box-shadow: none;
+    border-top: none;
+  }
+
+  .navcontent li a {
+    padding: 0 1rem;
+    border: none;
+  }
+
+  .navcontent li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .weather-info li:nth-child(n+2) {
+    display: inline;
+  }
+
+  .sideimage,
+  .sidecontent {
+    width: 50%;
+  }
+
+  #flxcontainer {
+    gap:16rem;
+  }
+}
+}

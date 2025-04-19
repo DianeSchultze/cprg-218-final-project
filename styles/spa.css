@@ -1,0 +1,200 @@
+h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+section {
+  border-top: 1px solid #32323224;
+  padding-bottom: 3rem;
+}
+
+
+
+figure {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border: 1px solid #32323224;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 0.5rem;
+
+}
+
+figcaption {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+h3 {
+  margin-bottom: 0.5rem
+}
+
+p {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+
+#massages {
+  border-top: 0px ;
+}
+
+.price {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #888888;
+}
+
+.book {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #32323224;
+  font-size: 0.9rem;
+}
+
+#endnote {
+  max-height: 100vh;
+  margin-top: 2rem;
+  padding: 0;
+  border: none;
+}
+
+.imgsec {
+  position: relative;
+  background-image: url('/images/allen-dewberry-jr-XjKiG46fkQI-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-blend-mode: overlay;
+  background-color: #4e4e4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-overlay {
+  display: flex;
+  flex-direction: column; 
+  background-color: white;
+  padding: 2rem;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  justify-content: space-around;
+  line-height: 1.5rem
+
+}
+.mini-title {
+  margin-bottom: 1rem;
+}
+#endnote ul {
+  list-style: none;
+}
+
+#endnote li {
+  font-size: 0.8rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+li i {
+  margin-right: 0.5rem;
+}
+
+
+#back2top {
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #32323224;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 480px) {
+    figure {
+        flex-direction: row;
+    }
+
+    figure img {
+        width: 50%;
+    }
+
+    figcaption {
+        flex: 1;
+    }
+
+}
+
+@media (min-width: 768px) {
+   figure {
+    flex-direction: column;
+   }
+
+   .grid-container {
+    grid-template-columns: repeat(3,1fr)
+   }
+
+   #wellness .grid-container,
+   #mani-pedi .grid-container,
+   #facials .grid-container {
+    grid-template-columns: repeat(2,1fr);
+
+   }
+   figure img {
+    width: 100%;
+
+   }
+
+}
+
+@media (min-width: 1024px) {
+    #facials figure,
+    #massages figure,
+    #mani-pedi figure,
+    #wellness figure {
+      flex-direction: row;
+
+    }
+
+    #facials .grid-container,
+    #massages .grid-container,
+    #mani-pedi .grid-container,
+    #wellness .grid-container {
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    #enhancements .grid-container,
+    #treatments .grid-container {
+      grid-template-columns: repeat(3,1fr)
+    }
+    #enhancements figure,
+    #treatments figure {
+    flex-direction: column;
+    }
+
+    #enhancements figure img,
+    #treatments figure img {
+      width: 100%;
+    }
+
+    figure img {
+      width: 50%;
+    }
+
+
+}
+
+
+
+
+

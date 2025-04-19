@@ -1,0 +1,109 @@
+
+h2{
+    padding: 2rem;
+    text-align: center;
+}
+
+header img {
+    margin-bottom: 5rem;
+}
+section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: justify;
+    border: #32323224 1px solid;
+    flex-direction: column;
+}
+
+section img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.details {
+    list-style: none;
+}
+
+.details li {
+    text-align: left;
+    line-height: 2rem;
+}
+
+.details li i {
+    margin-right: 0.5rem;
+}
+
+.desc {
+    font-size: 1rem;
+    color: #474747;
+    font-weight: 300;
+}
+
+
+
+#endnote {
+    max-height: 100vh;
+    margin-top: 2rem;
+    padding: 0;
+    border: none;
+  }
+  
+  .imgsec {
+    position: relative;
+    background-image: url('/images/allen-dewberry-jr-XjKiG46fkQI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-blend-mode: overlay;
+    background-color: #4e4e4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .note-overlay {
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    padding: 2rem;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    justify-content: space-around;
+    line-height: 1.5rem
+  
+  }
+  .mini-title {
+    margin-bottom: 1rem;
+  }
+  #endnote ul {
+    list-style: none;
+  }
+  
+  #endnote li {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  li i {
+    margin-right: 0.5rem;
+  }
+  
+  
+  #back2top {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #32323224;
+    font-size: 0.9rem;
+  }
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
